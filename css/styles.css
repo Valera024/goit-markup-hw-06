@@ -1333,7 +1333,7 @@ ul {
   }
 }
 
-@media (min-width: 428px) {
+@media (max-width: 428px) {
   .menu-container {
     position: fixed;
     top: 0;
