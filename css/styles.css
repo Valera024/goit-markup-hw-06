@@ -93,7 +93,6 @@ ul {
 .menu-btn {
   background-color: transparent;
   border: transparent;
-  padding: 22px 0;
 }
 
 .icon-mobile-menu {
@@ -109,16 +108,6 @@ ul {
 .header-navigation {
   display: flex;
   align-items: center;
-}
-
-.navigation-item::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  height: 4px;
-  border-radius: 2px;
-  background-color: var(--iris);
 }
 
 .navigation-list {
@@ -159,40 +148,20 @@ ul {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-link-first::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  height: 4px;
-  background-color: var(--ocean);
-  border-radius: 2px;
-}
-
 .nav-link-second {
   position: relative;
   color: var(--ocean);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-link-second::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  height: 4px;
-  background-color: var(--ocean);
-  border-radius: 2px;
-}
-
-.nav-link:hover::after {
+.nav-link::after {
   content: "";
   position: absolute;
   bottom: -2px;
   left: 0;
   width: 100%;
   height: 4px;
-  background-color: var(--iris);
+  background-color: var(--ocean);
 }
 
 .nav-link:active,
@@ -956,6 +925,7 @@ ul {
   align-items: center;
   justify-content: center;
   fill: transparent;
+  margin-right: 8px;
 }
 
 .privacy-link {
@@ -1102,4 +1072,8 @@ ul {
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
+}
+
+.active {
+  color: var(--ocean);
 }
