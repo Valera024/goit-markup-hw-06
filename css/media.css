@@ -327,6 +327,7 @@
 
   .card-item {
     width: calc((100% - 72px) / 3);
+    box-shadow: none;
   }
 }
 
